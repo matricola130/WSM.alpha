@@ -35,4 +35,12 @@ public class StoricoOrari {
     @JoinColumn(name = "id_utente")
     private Utente utente;
 
+    public StoricoOrari(Integer oreLavorate, Integer oreMancanti, Date dataInizioSettimana, Date dataFineSettimana, Date ultimoAggiornamento, Utente utente) {
+        this.oreLavorate = oreLavorate;
+        this.oreMancanti = oreMancanti;
+        this.dataInizioSettimana = dataInizioSettimana;
+        this.dataFineSettimana = dataFineSettimana;
+        this.ultimoAggiornamento = ultimoAggiornamento;
+        this.utente = utente;
+    }
 }
