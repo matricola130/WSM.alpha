@@ -8,15 +8,20 @@ import java.util.Optional;
 
 public interface UtenteService {
 
-    public abstract Optional<List<Utente>> getAllUtentiWithOreTotali(Integer oreTotali);
-    public abstract List<Utente> getAllUtenti();
-    public abstract Utente getUtenteById(Long id);
-    public abstract Utente getUtenteByEmail(String email);
+    //CREATE
+    Utente createUtente(UtenteDTO utente);
 
-    public abstract void deleteAllUtenti();
+    //FIND
+    Optional<List<Utente>> getAllUtentiWithOreTotali(Integer oreTotali);
+    List<Utente> getAllUtenti();
+    Utente getUtenteById(Long id);
+    Utente getUtenteByEmail(String email);
 
-    public abstract Utente createUtente(UtenteDTO utente);
-    public abstract Utente updateUtente(Long id, UtenteDTO utente);
-    public abstract void deleteUtente(Long id);
+    //UPDATE
+    Utente updateUtente(Long id, UtenteDTO utente);
+
+    //DELETE
+    void deleteAllUtenti();
+    void deleteUtente(Long id);
 
 }

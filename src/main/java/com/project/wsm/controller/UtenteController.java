@@ -5,12 +5,11 @@ import com.project.wsm.model.dto.UtenteDTO;
 import com.project.wsm.repository.UtenteRepository;
 import com.project.wsm.service.UtenteService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.rest.webmvc.ResourceNotFoundException;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import java.util.List;
-import java.util.Optional;
+
 
 @CrossOrigin(origins = "http://localhost:8081")
 @RestController
